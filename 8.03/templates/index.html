@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <script defer src="./static/js/index.js"></script>
+  <script defer src="./static/js/pymysql.js"></script>
+  <title>만들고 싶은 사이트 레이아웃 잡기</title>
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="Logo"><a href="/">logo</a></div>
+      <ul class="Menu">
+        <li><a href="/menu1">메뉴 1</a></li>
+        <li><a href="/menu2">메뉴 2</a></li>
+        <li><a href="/menu3">메뉴 3</a></li>
+        <li><a href="/menu4">메뉴 4</a></li>
+        <li><a href="/menu5">메뉴 5</a></li>
+      </ul>
+    </nav>
+  </header>
+  <section>
+    <div class="Main">
+      Main
+      <div class="short">
+        <input
+          type="text"
+          id="short-input"
+          placeholder="단축 주소를 입력해주세요"
+        />
+        <button onclick="urlShort()">단축 하기</button>
+      </div>
+      <div class="short-result">
+        <h3 class="short-result-title">${title}</h3>
+        <p class="short-result-content">${content}</p>
+        <button onclick="window.open('${url}')">단축 주소로 가기</button>
+      </div>
+    </div>
+    <div class="Side">
+      Sidebar
+      <div class="insert-wrap">
+        <input type="text" id="insert-nickname" placeholder="nickname"/>
+        <input type="text" id="insert-email" placeholder="email"/>
+        <input type="text" id="insert-password" placeholder="password"/>
+        <button onclick="insert()">INSERT</button>
+      </div>
+      <div class="select-wrap">
+        <input type="text" id="select-nickname" placeholder="nickname"/>
+        <input type="text" id="select-password" placeholder="password"/>
+        <button onclick="select()">SELECT</button>
+      </div>
+      <div class="insert-select-result-wrap">
+      </div>
+    </div>
+  </section>
+  <footer>Footer</footer>
+</body>
+</html>
