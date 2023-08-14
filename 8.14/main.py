@@ -1,5 +1,5 @@
 from fastapi import FastAPI
-from pydantic import BaseModel
+from dto.dto import User, Short
 from datetime import date, datetime, time, timedelta
 
 _sample = [
@@ -9,26 +9,6 @@ _sample = [
 
 app = FastAPI()
 
-class User(BaseModel):
-    id: int
-    loginId: str
-    nickname: str
-    password: str
-    email: str
-    emailVerified: bool = False
-    introduction: str = ""
-    image: str = "/./images/baseprofile.png"
-    loginMethod: str = "local"
-    createdAt: datetime
-    updatedAt: datetime
-
-
-class Short(BaseModel):
-    id: int
-    userId: int
-    originalUrl: str
-    shortUrl: str
-    createdAt: datetime
 
 @app.get("/")
 async def root():
