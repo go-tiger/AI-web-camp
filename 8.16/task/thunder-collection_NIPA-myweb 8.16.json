@@ -1,0 +1,264 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "NIPA-myweb 8.16",
+    "dateExported": "2023-08-16T17:09:07.905Z",
+    "version": "1.1",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "78fe86f9-b9b6-476a-8896-4c4875b92309",
+            "colId": "60722936-6ec2-4c08-9ebd-7b3a7e684255",
+            "containerId": "",
+            "name": "/",
+            "url": "localhost:8000",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2023-08-16T13:39:26.006Z",
+            "modified": "2023-08-16T13:39:26.006Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "26e46b5e-767f-42bc-bcb2-05a044a94c02",
+            "colId": "60722936-6ec2-4c08-9ebd-7b3a7e684255",
+            "containerId": "",
+            "name": "login",
+            "url": "localhost:8000/login",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2023-08-16T13:40:42.458Z",
+            "modified": "2023-08-16T13:42:12.440Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"loginId\": \"123\",\n  \"password\": \"123\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "b1efb7cc-200c-4411-bd14-beacce73ac94",
+            "colId": "60722936-6ec2-4c08-9ebd-7b3a7e684255",
+            "containerId": "",
+            "name": "logout",
+            "url": "localhost:8000/logout",
+            "method": "POST",
+            "sortNum": 30000,
+            "created": "2023-08-16T14:12:19.018Z",
+            "modified": "2023-08-16T14:12:36.670Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "5e0ca5d2-5d83-4c15-a72d-7cc8f6193368",
+            "colId": "60722936-6ec2-4c08-9ebd-7b3a7e684255",
+            "containerId": "",
+            "name": "join",
+            "url": "localhost:8000/join",
+            "method": "POST",
+            "sortNum": 40000,
+            "created": "2023-08-16T14:35:39.856Z",
+            "modified": "2023-08-16T14:51:39.755Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"loginId\": \"user1234\",\n  \"nickname\": \"고랑\",\n  \"password\": \"pw1234\",\n  \"email\": \"example@gmail.com\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "5d0b1903-9cdc-41f4-8386-b0ec52ed559e",
+            "colId": "60722936-6ec2-4c08-9ebd-7b3a7e684255",
+            "containerId": "",
+            "name": "id check",
+            "url": "localhost:8000/users/check/id",
+            "method": "GET",
+            "sortNum": 50000,
+            "created": "2023-08-16T14:51:46.891Z",
+            "modified": "2023-08-16T14:52:11.942Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"id\": \"user1234\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "f6588404-8462-47c3-9213-116f02e1eab3",
+            "colId": "60722936-6ec2-4c08-9ebd-7b3a7e684255",
+            "containerId": "",
+            "name": "email check",
+            "url": "localhost:8000/users/check/email",
+            "method": "GET",
+            "sortNum": 60000,
+            "created": "2023-08-16T15:02:52.664Z",
+            "modified": "2023-08-16T15:03:50.580Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"email\": \"example@gmail.com\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "fd455760-9279-4222-a694-88cc224f2418",
+            "colId": "60722936-6ec2-4c08-9ebd-7b3a7e684255",
+            "containerId": "",
+            "name": "nickname check",
+            "url": "localhost:8000/users/check/nickname",
+            "method": "GET",
+            "sortNum": 70000,
+            "created": "2023-08-16T15:02:54.170Z",
+            "modified": "2023-08-16T15:03:37.639Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"nickname\": \"고랑\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "499d5f1c-6b92-4b30-9b05-4091f5ac5460",
+            "colId": "60722936-6ec2-4c08-9ebd-7b3a7e684255",
+            "containerId": "",
+            "name": "mypage",
+            "url": "localhost:8000/users/info/1",
+            "method": "GET",
+            "sortNum": 80000,
+            "created": "2023-08-16T15:12:33.352Z",
+            "modified": "2023-08-16T15:13:30.064Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "05d79fd5-ecce-43dd-9ab1-cde3f042be82",
+            "colId": "60722936-6ec2-4c08-9ebd-7b3a7e684255",
+            "containerId": "",
+            "name": "mypage edit",
+            "url": "localhost:8000/users/info/1",
+            "method": "PATCH",
+            "sortNum": 90000,
+            "created": "2023-08-16T15:29:07.643Z",
+            "modified": "2023-08-16T15:36:39.495Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"nickname\": \"test1234\",\n  \"introduction\": \"내 소개 변경\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "72a321b7-6eb0-469c-93e0-76a9081931b2",
+            "colId": "60722936-6ec2-4c08-9ebd-7b3a7e684255",
+            "containerId": "",
+            "name": "email verified",
+            "url": "localhost:8000/users/email/1",
+            "method": "POST",
+            "sortNum": 100000,
+            "created": "2023-08-16T16:13:51.817Z",
+            "modified": "2023-08-16T16:14:52.298Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"email\": \"example@gmail.com\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "3a4933c1-7f3f-4197-8807-34669d7ff37f",
+            "colId": "60722936-6ec2-4c08-9ebd-7b3a7e684255",
+            "containerId": "",
+            "name": "email code check",
+            "url": "localhost:8000/users/email-code-check/1",
+            "method": "POST",
+            "sortNum": 105000,
+            "created": "2023-08-16T17:02:55.086Z",
+            "modified": "2023-08-16T17:03:10.557Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"email\": \"example@gmail.com\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "e4426fe3-27a7-4ffc-8ec6-0f2127c5b6c1",
+            "colId": "60722936-6ec2-4c08-9ebd-7b3a7e684255",
+            "containerId": "",
+            "name": "shorts page",
+            "url": "localhost:8000/shorts",
+            "method": "GET",
+            "sortNum": 110000,
+            "created": "2023-08-16T16:22:22.469Z",
+            "modified": "2023-08-16T16:22:40.363Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "1c873091-6ab4-4285-a0de-a4f432f1fd05",
+            "colId": "60722936-6ec2-4c08-9ebd-7b3a7e684255",
+            "containerId": "",
+            "name": "shorts add",
+            "url": "localhost:8000/shorts",
+            "method": "POST",
+            "sortNum": 120000,
+            "created": "2023-08-16T16:31:13.625Z",
+            "modified": "2023-08-16T16:33:42.802Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"originalUrl\": \"https://naver.com\"\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "50c367ba-22bb-4bbb-98eb-7a8c89df1de4",
+            "colId": "60722936-6ec2-4c08-9ebd-7b3a7e684255",
+            "containerId": "",
+            "name": "shorts user",
+            "url": "localhost:8000/shorts/users/1",
+            "method": "GET",
+            "sortNum": 130000,
+            "created": "2023-08-16T16:40:41.640Z",
+            "modified": "2023-08-16T16:51:13.847Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "cd978c30-7ee7-49bd-bede-d7bf251a05f3",
+            "colId": "60722936-6ec2-4c08-9ebd-7b3a7e684255",
+            "containerId": "",
+            "name": "shorts list",
+            "url": "localhost:8000/shorts/list/1",
+            "method": "GET",
+            "sortNum": 140000,
+            "created": "2023-08-16T16:40:57.358Z",
+            "modified": "2023-08-16T17:08:20.399Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        }
+    ]
+}
